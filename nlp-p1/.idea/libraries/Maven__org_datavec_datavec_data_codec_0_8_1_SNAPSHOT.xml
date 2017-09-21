@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.datavec:datavec-data-codec:0.8.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/datavec/datavec-data-codec/0.8.1-SNAPSHOT/datavec-data-codec-0.8.1-20170810.065909-538.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/datavec/datavec-data-codec/0.8.1-SNAPSHOT/datavec-data-codec-0.8.1-20170810.065909-538-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/datavec/datavec-data-codec/0.8.1-SNAPSHOT/datavec-data-codec-0.8.1-20170810.065909-538-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
