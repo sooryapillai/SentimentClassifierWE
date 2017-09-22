@@ -48,7 +48,7 @@ public class Word2VecExample
         t.setTokenPreProcessor(new CommonPreprocessor(){
             @Override
             public String preProcess(String sentence) {
-            	// sentence=sentence.replaceAll("[^a-zA-Z ]", "");
+            	//sentence=sentence.replaceAll("[^a-zA-Z ]", "");
                 return sentence.toLowerCase();
             }
         });
@@ -56,7 +56,7 @@ public class Word2VecExample
         // configure Word2vec neural net
         Word2Vec vec = new Word2Vec.Builder()
                 .minWordFrequency(1)
-                .iterations(8)
+                .iterations(5)
                 .layerSize(layerSize)
                 .seed(37)
                 .windowSize(5)

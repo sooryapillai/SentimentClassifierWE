@@ -30,12 +30,15 @@ class SentimentClassifierWE {
 		System.out.println("Computing positive Vector...");
 		Word2VecExample WE = new Word2VecExample(posFile);
 		double[] posVec = WE.run("train");
+		
 		System.out.println("Computing negative Vector...");
 		WE = new Word2VecExample(negFile);
 		double[] negVec = WE.run("train");
+		
 		System.out.println("Computing excerpt Vector...");
 		WE = new Word2VecExample(excerptFile);
 		double[] expVec = WE.run("test");
+		
 		System.out.println("Computing Cosine Similarities...");
 		try{
 			FileWriter outputWriter = new FileWriter(outputPath+File.separator+"result.csv");
@@ -72,8 +75,8 @@ class SentimentClassifierWE {
 					expVec[w] = (nWords == 0)?0:(expVec[w]/nWords);
 				}
 				
-				double negSim = cosineSimilarity(negVec, expVec);
-				double posSim = cosineSimilarity(posVec, expVec);
+				double negSim = cosineSimilarity(expVec,negVec);
+				double posSim = cosineSimilarity(expVec,posVec);
 				
 				// if similarity to positive vector is more then review is positive
 				if(Math.abs(posSim) > Math.abs(negSim))

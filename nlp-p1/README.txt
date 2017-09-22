@@ -10,14 +10,13 @@ w#PreRequisites:
 	2.1. Open Eclipse. Goto File -> Import. This opens the Import Wizard.
 	2.2. Select Existing Maven Projects under Maven and click Next.
 	2.3. Browse to the cloned folder and select it.
-	2.4. The pom.xml will be listed under projects. Select it.
+	2.4. The parent-pom.xml will be listed under projects. Select it.
 	2.5. Click Finish.
 2. Import our project folder into ECLIPSE using Steps 2.1 to 2.5
 3. Run the SentimentClassifierWE class
 	#STEPS TO EXECUTE THE SENTIMENT_CLASSIFIER:
-	1. Build the project nlp-p1 through IDE
-	2. Run SentimentClassifierWE with these four arguments: [positive input file] [negative input file] [test file] [output folder path] 
-	3. Steps to set run time arguments for main function:
+	1. Run SentimentClassifierWE with these six arguments: [positive training file] [negative training file] [positive development file] [negative development file] [test file] [output folder path] 
+	2. Steps to set run time arguments for main function:
 		#ECLIPSE:
 		1. Goto Project Menu -> Properties
 		2. Select Run/Debug settings
